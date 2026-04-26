@@ -13,9 +13,9 @@ function createBot() {
     username: config.botUsername,
     auth: 'offline',
     version: false,
-    viewDistance: config.botChunk
+    checkTimeoutInterval: 60000, // Tăng thời gian chờ phản hồi lên 60s
   });
-
+  
   let movementPhase = 0;
   const STEP_INTERVAL = 1500;
   const JUMP_DURATION = 500;
