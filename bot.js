@@ -1,3 +1,8 @@
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Bot is Online!'));
+app.listen(3000, () => console.log('Server ready!'));
+
 const mineflayer = require('mineflayer');
 const config = require('./config.json');
 
